@@ -26,9 +26,19 @@ body {
   
   width: 500px;
   padding: 20px 40px;
+  box-sizing: border-box;
   border-radius: 4px;
   color: #ea8989;
   background: rgba(255, 255, 255, 0.9);
+}
+
+@media screen and (max-width: 600px) {
+  .player {
+    position: fixed;
+    top: 30%;
+    
+    width: 95%;
+  }
 }
 
 .player .main {
@@ -80,9 +90,9 @@ body {
   margin-top: 8px;
 }
 
-/* #canvas1 {
+#canvas1 {
   position: fixed;
-  left: 100px;
+  left: 45%;
   z-index: 2;
 }
 
@@ -99,4 +109,4 @@ body {
   transform: translateX(-50%);
   bottom: 0;
   z-index: 1;
-} */
+} 
