@@ -32,7 +32,6 @@ function setMusic() {
   $auther.innerText = curMusic.auther
   $title.innerText = curMusic.title
   $cover.style.backgroundImage = `url(${curMusic.img})`
-  //audioObject.play()
 } 
 
 function secondToText(second) {
@@ -45,7 +44,7 @@ function secondToText(second) {
 
 
 $playingBtn.onclick = function() {
-  if(this.classList.contains('icon-playing')) {
+  if(audioObject.paused) {
     this.classList.remove('icon-playing')
     this.classList.add('icon-pause')
     audioObject.play()
