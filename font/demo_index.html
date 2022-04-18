@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8"/>
   <title>iconfont Demo</title>
+  <meta name="viewport" content="width=device-width">
   <link rel="shortcut icon" href="//img.alicdn.com/imgextra/i2/O1CN01ZyAlrn1MwaMhqz36G_!!6000000001499-73-tps-64-64.ico" type="image/x-icon"/>
   <link rel="icon" type="image/svg+xml" href="//img.alicdn.com/imgextra/i4/O1CN01EYTRnJ297D6vehehJ_!!6000000008020-55-tps-64-64.svg"/>
   <link rel="stylesheet" href="https://g.alicdn.com/thx/cube/1.3.2/cube.min.css">
@@ -55,6 +56,12 @@
           <ul class="icon_lists dib-box">
           
             <li class="dib">
+              <span class="icon iconfont">&#xe8b8;</span>
+                <div class="name">pause</div>
+                <div class="code-name">&amp;#xe8b8;</div>
+              </li>
+          
+            <li class="dib">
               <span class="icon iconfont">&#xe614;</span>
                 <div class="name">icon-arrow-right</div>
                 <div class="code-name">&amp;#xe614;</div>
@@ -70,12 +77,6 @@
               <span class="icon iconfont">&#xe62a;</span>
                 <div class="name">play-right-r</div>
                 <div class="code-name">&amp;#xe62a;</div>
-              </li>
-          
-            <li class="dib">
-              <span class="icon iconfont">&#xe602;</span>
-                <div class="name">play_pause</div>
-                <div class="code-name">&amp;#xe602;</div>
               </li>
           
           </ul>
@@ -96,9 +97,9 @@
 <pre><code class="language-css"
 >@font-face {
   font-family: 'iconfont';
-  src: url('iconfont.woff2?t=1641992660515') format('woff2'),
-       url('iconfont.woff?t=1641992660515') format('woff'),
-       url('iconfont.ttf?t=1641992660515') format('truetype');
+  src: url('iconfont.woff2?t=1642251943732') format('woff2'),
+       url('iconfont.woff?t=1642251943732') format('woff'),
+       url('iconfont.ttf?t=1642251943732') format('truetype');
 }
 </code></pre>
           <h3 id="-iconfont-">第二步：定义使用 iconfont 的样式</h3>
@@ -125,6 +126,15 @@
         <ul class="icon_lists dib-box">
           
           <li class="dib">
+            <span class="icon iconfont icon-pause1"></span>
+            <div class="name">
+              pause
+            </div>
+            <div class="code-name">.icon-pause1
+            </div>
+          </li>
+          
+          <li class="dib">
             <span class="icon iconfont icon-playing"></span>
             <div class="name">
               icon-arrow-right
@@ -148,15 +158,6 @@
               play-right-r
             </div>
             <div class="code-name">.icon-play-right
-            </div>
-          </li>
-          
-          <li class="dib">
-            <span class="icon iconfont icon-pause"></span>
-            <div class="name">
-              play_pause
-            </div>
-            <div class="code-name">.icon-pause
             </div>
           </li>
           
@@ -189,6 +190,14 @@
           
             <li class="dib">
                 <svg class="icon svg-icon" aria-hidden="true">
+                  <use xlink:href="#icon-pause1"></use>
+                </svg>
+                <div class="name">pause</div>
+                <div class="code-name">#icon-pause1</div>
+            </li>
+          
+            <li class="dib">
+                <svg class="icon svg-icon" aria-hidden="true">
                   <use xlink:href="#icon-playing"></use>
                 </svg>
                 <div class="name">icon-arrow-right</div>
@@ -209,14 +218,6 @@
                 </svg>
                 <div class="name">play-right-r</div>
                 <div class="code-name">#icon-play-right</div>
-            </li>
-          
-            <li class="dib">
-                <svg class="icon svg-icon" aria-hidden="true">
-                  <use xlink:href="#icon-pause"></use>
-                </svg>
-                <div class="name">play_pause</div>
-                <div class="code-name">#icon-pause</div>
             </li>
           
           </ul>

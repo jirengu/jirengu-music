@@ -10,7 +10,7 @@ body {
   right: 0;
   bottom: 0;
   z-index: -1;
-  background: url(http://jirengu_1.gitee.io/music/if-you.png) center center no-repeat;
+  background: url(../music/if-you.png) center center no-repeat;
   background-size: cover;
   filter: blur(10px);
   transform: scale(1.2);
@@ -19,15 +19,16 @@ body {
 
 .player {
   position: fixed;
-  top: 50%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 10;
   
   width: 500px;
   padding: 20px 40px;
   border-radius: 4px;
   color: #ea8989;
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.9);
 }
 
 .player .main {
@@ -68,12 +69,34 @@ body {
 
 .player .bar .progress {
   height: 100%;
-  width: 50%;
+  width: 0%;
   border-radius: 3px;
   background: currentColor;
+  transition: width, 1s;
 }
 
 .player .time {
   text-align: right;
   margin-top: 8px;
 }
+
+/* #canvas1 {
+  position: fixed;
+  left: 100px;
+  z-index: 2;
+}
+
+#canvas2 {
+  position: fixed;
+  right: 100px;
+  top: 200px;
+  z-index: 3;
+}
+
+#canvas3 {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  z-index: 1;
+} */
